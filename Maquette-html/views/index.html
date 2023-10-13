@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+  <body class="hold-transition sidebar-mini layout-fixed">
+     <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="/presentation/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Solicoders</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Gestion compétences
+              </p>
+            </a>
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="nav-icon fas fa-chart-line"></i>
+                  <p>Gestion des niveaux</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">
+                  <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                  <p>Gestion des formateurs</p>
+                </a>
+              </li>      
+          </li>
+
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+  <div class="content-wrapper">   
+      <a type="button" href="add-edit.html" class="btn  btn-success mt-5 m-5">Ajouter compétences</a>
+      <div class="card">
+        <!-- /.card-header -->
+        <div class="card-body">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="width: 10px">Référence</th>
+                <th>Code</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th style="width: 40px">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C1</td>
+                <td>Maquette</td>
+                <td>Maquetter une application mobile</td>
+                <td>Description</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="add-edit.html" class="btn btn-warning mx-2">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="" class="btn btn-danger mx-2">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>C2</td>
+                <td>Base de données</td>
+                <td>Manipuler une base de données-perfectionnement</td>
+                <td>Description</td>
+                <td>
+                  <div class="btn-group">
+                    <a href="add-edit.html" class="btn btn-warning mx-2">
+                      <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="" class="btn btn-danger mx-2">
+                      <i class="fas fa-trash"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <tr>
+                  <td>C3</td>
+                  <td>Back-end</td>
+                  <td>Developper la partie backend d'une application web ou web mobile- perfectionnement</td>
+                  <td>Description</td>
+                  <td>
+                    <div class="btn-group">
+                      <a href="add-edit.html" class="btn btn-warning mx-2">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="" class="btn btn-danger mx-2">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>C4</td>
+                  <td>Gestion</td>
+                  <td>Collaborer une gedtion d'un projet informatique et a l'organisation de l'envirenement de développement- perfectionnement</td>
+                  <td>Description</td>
+                  <td>
+                    <div class="btn-group">
+                      <a href="add-edit.html" class="btn btn-warning mx-2">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="" class="btn btn-danger mx-2">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>C5</td>
+                  <td>Mobile native</td>
+                  <td>Developper une application mobile native, avec android et React Native</td>
+                  <td>Description</td>
+                  <td>
+                    <div class="btn-group">
+                      <a href="add-edit.html" class="btn btn-warning mx-2">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="" class="btn btn-danger mx-2">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              <tr>
+                <tr>
+                  <td>C6</td>
+                  <td>Tests</td>
+                  <td>Préparer et exécuter les plans de text d'une application</td>
+                  <td>Description</td>
+                  <td>
+                    <div class="btn-group">
+                      <a href="add-edit.html" class="btn btn-warning mx-2">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="" class="btn btn-danger mx-2">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>C7</td>
+                  <td>Déploiement</td>
+                  <td>Préparer et exécuter le déploiement d'une application web-mobile-perfectionnement </td>
+                  <td>Description</td>
+                  <td>
+                    <div class="btn-group">
+                      <a href="add-edit.html" class="btn btn-warning mx-2">
+                        <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="" class="btn btn-danger mx-2">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+  </div>
+   
+<!-- jQuery -->
+<script src="../assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../assets/js/demo.js"></script>
+</body>
+</html>
