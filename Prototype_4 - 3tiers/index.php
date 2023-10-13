@@ -85,7 +85,46 @@ foreach ($result as $data) {
 ?>
 </div>
   </div>
+<div style="width: 800px;">
+  <canvas id="myChart"></canvas>
+</div>
 
+<script>
+  const labels = <?php echo json_encode($cities) ?>;
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'City Population',
+      data: <?php echo json_encode($population) ?>,
+      backgroundColor: '#9AC8EB',
+      borderColor: 'rgb(75, 192, 192)',
+      borderWidth: 1
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  };
+
+  // Make sure Chart.js is loaded before creating the chart
+  document.addEventListener('DOMContentLoaded', function () {
+    var myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  });
+</script>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 </html>
